@@ -24,7 +24,7 @@ pipeline {
         stage('Git: Code Checkout') {
             steps {
                 script{
-                    code_checkout("https://github.com/DevMadhup/Wanderlust-Mega-Project.git","main")
+                    code_checkout("https://github.com/PriyankaYadav12/Wanderlust-Mega-Project.git","main")
                 }
             }
         }
@@ -102,8 +102,12 @@ pipeline {
         stage("Docker: Push to DockerHub"){
             steps{
                 script{
-                    docker_push("wanderlust-backend-beta","${params.BACKEND_DOCKER_TAG}","madhupdevops") 
-                    docker_push("wanderlust-frontend-beta","${params.FRONTEND_DOCKER_TAG}","madhupdevops")
+                    docker_push("wanderlust-backend-beta","${params.BACKEND_DOCKER_TAG}","priyankayadav08
+
+") 
+                    docker_push("wanderlust-frontend-beta","${params.FRONTEND_DOCKER_TAG}","priyankayadav08
+
+")
                 }
             }
         }
